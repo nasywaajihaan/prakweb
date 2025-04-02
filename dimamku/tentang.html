@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+    <form action="proses.php" method="POST"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imamku - Tentang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imamku</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="pesan.php">Pesan</a></li>
+                <li><a href="history.php">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tentang Imamku</h2>
+        <p>Latar belakang</p>
+        <p>Imamku pertama didirikan pada tahun 2025. Imamku bertujuan untuk membantu hamba-hamba Islam dalam menjalani ibadah dengan lebih baik.</p>
+        <p>Dengan Imamku, kami berharap akses dalam menghubungkan para imam dengan jemaat menjadi lebih mudah.</p>
+
+        <h3>Contact Us</h3>
+        <form action="tentang.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan Anda:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imamku. All rights reserved.</p>
+    </footer>
+</body>
+</html>
